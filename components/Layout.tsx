@@ -21,14 +21,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div
             className="w-full text-left px-4 py-2 rounded-lg bg-blue-600 text-white"
           >
-            Live Dashboard
+            Simulation Dashboard
           </div>
         </nav>
 
         <div className="p-4 border-t border-gray-800">
           <div className="flex items-center space-x-2 text-xs text-green-400">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-            <span>HyperEVM Mainnet Connected</span>
+            <span>Simulation — no mainnet connection</span>
           </div>
         </div>
       </aside>
@@ -39,7 +39,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="md:hidden flex items-center justify-between p-4 bg-[#111827] border-b border-gray-800">
           <h1 className="font-bold text-blue-400">HYPE Whale Bot</h1>
           <div className="text-xs text-green-400 font-medium px-2 py-1 bg-green-400/10 rounded border border-green-500/20">
-            LIVE
+            SIMULATION
           </div>
         </div>
 

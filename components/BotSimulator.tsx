@@ -71,7 +71,7 @@ const BotSimulator: React.FC = () => {
         <div className="bg-[#1a1f2e] p-4 rounded-xl border border-gray-800 shadow-lg">
           <p className="text-gray-400 text-sm">HYPE Current Price</p>
           <p className="text-2xl font-bold text-white mono">${currentPrice.toFixed(4)}</p>
-          <p className="text-xs text-green-400 mt-1">Source: Precompile 0x...0808</p>
+          <p className="text-xs text-green-400 mt-1">Source: local simulation</p>
         </div>
         <div className="bg-[#1a1f2e] p-4 rounded-xl border border-gray-800 shadow-lg">
           <p className="text-gray-400 text-sm">Monitoring Asset</p>
@@ -82,9 +82,9 @@ const BotSimulator: React.FC = () => {
           <p className="text-gray-400 text-sm">QuickNode Webhook Status</p>
           <div className="flex items-center space-x-2 mt-1">
             <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
-            <p className="text-xl font-bold text-white">Active</p>
+            <p className="text-xl font-bold text-white">Not connected</p>
           </div>
-          <p className="text-xs text-gray-400 mt-1">Latency: 42ms</p>
+          <p className="text-xs text-gray-400 mt-1">Latency: not measured</p>
         </div>
       </div>
 
@@ -109,7 +109,7 @@ const BotSimulator: React.FC = () => {
       <div className="bg-[#1a1f2e] rounded-xl border border-gray-800 overflow-hidden flex flex-col h-[500px]">
         <div className="p-4 border-b border-gray-800 flex justify-between items-center bg-[#1c2333]">
           <h3 className="text-lg font-semibold text-white flex items-center">
-            <span className="mr-2">🚨</span> Real-time Whale Alerts
+            <span className="mr-2">🚨</span> Simulated Whale Alerts
           </h3>
           <span className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">Last 50 Events</span>
         </div>
@@ -117,7 +117,7 @@ const BotSimulator: React.FC = () => {
         <div className="flex-1 overflow-y-auto">
           {alerts.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full text-gray-500">
-              <p>Waiting for events from HyperEVM...</p>
+              <p>No simulated events yet.</p>
               <div className="w-12 h-1 bg-gray-700 mt-4 overflow-hidden">
                 <div className="w-full h-full bg-blue-500 animate-[loading_1.5s_infinite]"></div>
               </div>
