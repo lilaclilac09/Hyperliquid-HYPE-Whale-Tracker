@@ -4,7 +4,10 @@
 
 # Run and deploy your AI Studio app
 
-This contains everything you need to run your app locally.
+This is a local dashboard simulation: price movements and alert data are
+generated in the browser, not fetched from HyperEVM or QuickNode. No mainnet
+connection or webhook latency is measured. See the
+[acceptance audit](notes/acceptance-audit-2026-11-23.md).
 
 View your app in AI Studio: https://ai.studio/apps/drive/1avGwzAGI8tK_ZCG9uWAZ1M_uxG7lRzdT
 
@@ -15,6 +18,9 @@ View your app in AI Studio: https://ai.studio/apps/drive/1avGwzAGI8tK_ZCG9uWAZ1M
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Run the app (no Gemini API key is required; the AI feature was removed):
    `npm run dev`
+
+Build with `npm run build`; typecheck with `npx tsc --noEmit`.
+
+Status: LOCAL ONLY — Next human action: choose a hosting target and deploy the simulation before claiming a live product.
